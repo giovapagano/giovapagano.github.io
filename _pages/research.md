@@ -65,7 +65,10 @@ author_profile: true
 </ul>
 {% endif %}
 
-{% assign combined_other = (others | default: empty) | concat: (uncategorized | default: empty) %}
+{% assign safe_others = others | default: empty %}
+{% assign safe_uncategorized = uncategorized | default: empty %}
+{% assign combined_other = safe_others | concat: safe_uncategorized %}
+
 {% if combined_other.size > 0 %}
 <h2>Other</h2>
 <hr />
