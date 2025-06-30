@@ -23,7 +23,7 @@ author_profile: true
     {% include archive-single-cv.html %}
   {% endfor %}
 </ul>
-{% endif %}
+{% endif %} 
 
 {% if bookchapters.size > 0 %}
 <h2>Book Chapters</h2>
