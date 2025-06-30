@@ -65,16 +65,14 @@ author_profile: true
 </ul>
 {% endif %}
 
-{% assign safe_others = others | default: empty %}
-{% assign safe_uncategorized = uncategorized | default: empty %}
-{% assign combined_other = safe_others | concat: safe_uncategorized %}
-
-{% if combined_other.size > 0 %}
-<h2>Other</h2>
-<hr />
-<ul>
-  {% for post in combined_other reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}
-</ul>
+{% assign safe_others = others %}
+{% if safe_others == nil %}
+  {% assign safe_others = "" | split: "" %}
 {% endif %}
+
+{% assign safe_uncategorized = uncategorized %}
+{% if safe_uncategorized == nil %}
+  {% assign safe_uncategorized = "" | split: "" %}
+{% endif %}
+
+{% assign combined_other = safe_others | concat: safe_uncategorized %}
