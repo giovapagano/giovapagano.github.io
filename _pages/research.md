@@ -1,19 +1,19 @@
 ---
 layout: archive
 title: "Research"
-permalink: /research/
+permalink: /publications/
 author_profile: true
 ---
 
 {% include base_path %}
 
-{% assign journals = site.research | where: "category", "journal" %}
-{% assign bookchapters = site.research | where: "category", "bookchapter" %}
-{% assign books = site.research | where: "category", "book" %}
-{% assign workingpapers = site.research | where: "category", "workingpaper" %}
-{% assign workinprogress = site.research | where: "category", "workinprogress" %}
-{% assign others = site.research | where: "category", "other" %}
-{% assign uncategorized = site.research | where_exp: "post", "post.category == nil" %}
+{% assign journals = site.publications | where: "category", "journal" %}
+{% assign bookchapters = site.publications | where: "category", "bookchapter" %}
+{% assign books = site.publications | where: "category", "book" %}
+{% assign workingpapers = site.publications | where: "category", "workingpaper" %}
+{% assign workinprogress = site.publications | where: "category", "workinprogress" %}
+{% assign others = site.publications | where: "category", "other" %}
+{% assign uncategorized = site.publications | where_exp: "post", "post.category == nil" %}
 
 {% if journals.size > 0 %}
 <h2>Journal Articles</h2>
