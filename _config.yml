@@ -283,7 +283,6 @@ defaults:
       layout: talk
       author_profile: true
       share: true
-
   # _research
   - scope:
       path: ""
@@ -291,9 +290,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
-      comments: true
-
+      share: true 
 
 
 # Sass/SCSS
