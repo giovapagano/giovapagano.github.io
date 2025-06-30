@@ -1,4 +1,4 @@
-# Welcome to Jekyll!
+a# Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your entire site, values
 # which you are expected to set up once and rarely need to edit after that.
@@ -283,6 +283,16 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+
+  # _research
+  - scope:
+      path: ""
+      type: research
+   values:
+     layout: single
+     author_profile: true
+     share: true
+     comments: true
 
 
 # Sass/SCSS
