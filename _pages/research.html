@@ -1,0 +1,21 @@
+---
+layout: archive
+title: "Research"
+permalink: /research/
+author_profile: true
+---
+
+<h2>Research Projects</h2>
+<hr />
+<ul>
+{% for post in site.research reversed %}
+  <li>
+    <h3>{{ post.title }}</h3>
+    {% if post.image %}
+      <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" style="max-width:300px;">
+    {% endif %}
+    <p>{{ post.excerpt }}</p>
+  </li>
+  <hr />
+{% endfor %}
+</ul>
