@@ -1,11 +1,11 @@
 ---
-title: "Estimating Executive Constraints in EU Legislation: A Machine-Learning Approach"
+title: " Identifying Delegation and Constraints in Legislative Texts: A Computational Method Applied to the European Union"
 collection: publications
 category: workingpaper
 permalink: /publication/2024-working-paper-constraints
 date: 2024-06-01
 venue: "Working paper"
-citation: "Franchino, F., Migliorati, M., Pagano, G., Vignoli, V. Identifying Delegation and Constraints in Legislative Texts: A Computational Method Applied to the European Union, 2024."
+citation: "2024. Franchino, F., Migliorati, M., Pagano, G., Vignoli, V."
 project: eu-laws
 conferences:
   - "SISP 2023 - Workshop for the SG  on Research Methods for Political Science"

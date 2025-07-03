@@ -2,10 +2,10 @@
 title: "More Than Words: The Visual Rhetoric ofRadical Right Populism on Social Media"
 collection: publications
 category: wip
-permalink: /publication/2024-wip-visual-consistency
+permalink: /publication/2025-work-in-progress-visual-consistency
 date: 2024-05-01
 venue: "Conference paper"
-citation: "Pagano, G. Visual Consistency and Populist Radical Right Campaigns. Presented at ECPR 2024, APSA 2024."
+citation: "2025. Curini, L., Pagano, G."
 project: visual-politics
 conferences:
   - "EPSA 2025 - LLM Workshop Talking to machines"
