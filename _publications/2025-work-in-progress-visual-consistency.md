@@ -5,7 +5,7 @@ category: wip
 permalink: /publication/2025-work-in-progress-visual-consistency
 date: 2024-05-01
 venue: "Conference paper"
-citation: "2025. Curini, L., Pagano, G."
+citation: "with Curini, L."
 project: visual-politics
 conferences:
   - "EPSA 2025 - LLM Workshop Talking to machines"

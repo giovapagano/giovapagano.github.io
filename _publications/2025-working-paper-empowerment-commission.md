@@ -5,7 +5,7 @@ category: workingpaper
 permalink: /publication/2025-working-paper-empowerment-commission
 date: 2024-06-01
 venue: "Working paper"
-citation: "2025. Franchino, F., Migliorati, M., Pagano, G."
+citation: "with Franchino, F., and Migliorati, M."
 project: eu-laws
 conferences:
   - "SISP 2025"

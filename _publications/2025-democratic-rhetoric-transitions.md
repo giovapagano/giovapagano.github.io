@@ -5,7 +5,7 @@ category: wip
 permalink: /publication/2025-democratic-rhetoric-transitions
 date: 2024-06-01
 venue: "Conference paper"
-citation: "2025. Corda, T. and Pagano, G."
+citation: "with Corda, T."
 project: democratic-rhetoric
 conferences:
   - "EPSA 2025"

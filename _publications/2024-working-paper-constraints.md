@@ -5,7 +5,7 @@ category: workingpaper
 permalink: /publication/2024-working-paper-constraints
 date: 2024-06-01
 venue: "Working paper"
-citation: "2024. Franchino, F., Migliorati, M., Pagano, G., Vignoli, V."
+citation: "with Franchino, F., Migliorati, M., and Vignoli, V."
 project: eu-laws
 conferences:
   - "SISP 2023 - Workshop for the SG  on Research Methods for Political Science"
