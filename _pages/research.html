@@ -15,6 +15,24 @@ author_profile: true
       <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" style="max-width:300px;">
     {% endif %}
     <p>{{ post.excerpt }}</p>
+
+    {% assign linked_pubs = site.publications | where: "project", post.slug %}
+    {% if linked_pubs.size > 0 %}
+      <h4>Related Publications</h4>
+      <ul>
+        {% for pub in linked_pubs %}
+          <li>
+            <strong>{{ pub.title }}</strong> ({{ pub.venue }})<br/>
+            <em>{{ pub.citation }}</em><br/>
+            {% if pub.category == "workingpaper" %}
+              <span>Under review</span>
+            {% elsif pub.category == "wip" %}
+              <span>Presented at: {{ pub.conferences | join: ", " }}</span>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
   </li>
   <hr />
 {% endfor %}

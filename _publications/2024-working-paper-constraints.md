@@ -5,7 +5,11 @@ category: workingpaper
 permalink: /publication/2024-working-paper-constraints
 date: 2024-06-01
 venue: "Working paper"
-citation: "Pagano, G. Estimating Executive Constraints in EU Legislation: A Machine-Learning Approach. Working paper, 2024."
+citation: "Franchino, F., Migliorati, M., Pagano, G., Vignoli, V. Identifying Delegation and Constraints in Legislative Texts: A Computational Method Applied to the European Union, 2024."
+project: eu-laws
+conferences:
+  - "SISP 2023 - Workshop for the SG  on Research Methods for Political Science"
+  - "IARG 2024 - Regulatory Governance in a Changing World"
 ---
 
-A working paper developing scalable machine-learning methods for estimating executive constraints embedded in European Union legislation.
+We advance a computational approach to identify and measure delegation and executive constraints in European Union legislative texts, combining a rule-based with domain-specific linguistic features.We advance a computational approach to identify and measure delegation and executive constraints in European Union legislative texts, combining rule-based logic with natural language processing techniques, including named entity recognition.
