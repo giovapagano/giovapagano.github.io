@@ -1,5 +1,5 @@
 ---
-title: "More Than Words: The Visual Rhetoric ofRadical Right Populism on Social Media"
+title: "More Than Words: The Visual Rhetoric of Radical Right Populism on Social Media"
 collection: publications
 category: wip
 permalink: /publication/2025-work-in-progress-visual-consistency

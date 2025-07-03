@@ -14,9 +14,7 @@ Education
 * Ph.D. in Political Science, [NASP](https://www.nasp.eu/training/phd-programmes/pols.html), University of Milan, 2022  
   * Dissertation on online campaigning and affective polarization during the 2019 European Parliament elections  
 
-* M.A. in Political Science (or equivalent — *if applicable*, add here)
-
-* B.A. in Political Science (or equivalent — *if applicable*, add here)
+* M.A. in Political Studies and International Relations. University of Turin, 2012, (110/110 cum laude)
 
 Work experience
 ======
@@ -34,7 +32,6 @@ Skills
 * Computational text analysis
 * Computer vision for social science
 * Statistical analysis (R, Python)
-* Embedding models and NLP
 * Data management for social science
 
 Publications
@@ -57,5 +54,5 @@ Teaching
 
 Service and leadership
 ======
-* Instructor: workshops on computational methods (LLMs for political science, SISP 2024; Computational Visual Analysis for social scientists, SISP 2025)
-* Thesis supervision, for students of the MA in Public and Corporate Communication.
+ 
+* Thesis supervision, for students of the MA in Public and Corporate Communication (2022-2024). 
