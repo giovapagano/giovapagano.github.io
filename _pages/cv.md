@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+You can download my [CV (here in PDF)](/files/Giovanni_Pagano_CV.pdf).
+
 Education
 ======
 * Ph.D. in Political Science, [NASP](https://www.nasp.eu/training/phd-programmes/pols.html), University of Milan, 2022  
@@ -36,9 +38,13 @@ Skills
 
 Publications
 ======
-<ul>{% for post in site.publications reversed %}
-  {% include archive-single-cv.html %}
-{% endfor %}</ul>
+<ul>
+{% for post in site.publications reversed %}
+  {% unless post.category == "wip" or post.category == "workingpaper" %}
+    {% include archive-single-cv.html %}
+  {% endunless %}
+{% endfor %}
+</ul>
 
 Talks
 ======
