@@ -11,6 +11,27 @@ redirect_from:
 
 You can download my [CV (here in PDF)](/files/Giovanni_Pagano_CV.pdf).
 
+
+Current Appointments
+======
+* 2023–present: Post-Doctoral Research Fellow  
+  * University of Milan  
+  * Project: *VIPoP — The Visual Politics of Populism (PRIN 2023–2025)*  
+  * Research focus: Computational methods for visual and textual political communication  
+
+
+Past appointments
+======
+
+* 2022–2023: Postdoctoral Researcher  
+  * DAPs&CO program, University of Milan  
+  * Research and teaching on computational methods for political science  
+
+* 2015-2019 Research Associate at REScEU \ EuVisions
+  * External research associate at REScEU \ EuVisions (ERC-funded, University of Milan; PI: Prof. Maurizio Ferrera), Centro di Ricerca e Documentazione L. Einaudi.
+  * Computational analysis of social media data  
+
+
 Education
 ======
 * Ph.D. in Political Science, [NASP](https://www.nasp.eu/training/phd-programmes/pols.html), University of Milan, 2022  
@@ -18,16 +39,6 @@ Education
 
 * M.A. in Political Studies and International Relations. University of Turin, 2012, (110/110 cum laude)
 
-Work experience
-======
-* 2023–present: Post-Doctoral Research Fellow  
-  * University of Milan  
-  * Project: *VIPoP — The Visual Politics of Populism (PRIN 2023–2025)*  
-  * Research focus: Computational methods for visual and textual political communication  
-
-* 2022–2023: Postdoctoral Researcher  
-  * DAPs&CO program, University of Milan  
-  * Research and teaching on computational methods for political science  
 
 Publications
 ======
@@ -39,11 +50,13 @@ Publications
 {% endfor %}
 </ul>
 
+
 Talks
 ======
 <ul>{% for post in site.talks reversed %}
   {% include archive-single-talk-cv.html %}
 {% endfor %}</ul>
+
 
 Teaching
 ======
@@ -51,10 +64,11 @@ Teaching
   {% include archive-single-cv.html %}
 {% endfor %}</ul>
 
+
 Service and leadership
 ======
- 
-* Thesis supervision, for students of the MA in Public and Corporate Communication (2022-2024). 
+ * Thesis supervision, for students of the MA in Public and Corporate Communication (2022-2024). 
+
 
 Skills
 ======
