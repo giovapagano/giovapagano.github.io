@@ -29,13 +29,6 @@ Work experience
   * DAPs&CO program, University of Milan  
   * Research and teaching on computational methods for political science  
 
-Skills
-======
-* Computational text analysis
-* Computer vision for social science
-* Statistical analysis (R, Python)
-* Data management for social science
-
 Publications
 ======
 <ul>
@@ -62,3 +55,10 @@ Service and leadership
 ======
  
 * Thesis supervision, for students of the MA in Public and Corporate Communication (2022-2024). 
+
+Skills
+======
+* Computational text analysis
+* Computer vision for social science
+* Statistical analysis (R, Python)
+* Data management for social science
