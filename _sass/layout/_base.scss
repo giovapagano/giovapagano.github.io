@@ -16,7 +16,9 @@ body {
   padding: $masthead-height 0 0;
   padding-bottom: 9em;
   font-family: $global-font-family;
-  line-height: 1.5;
+  font-size: 1.04rem;
+  line-height: 1.72;
+  letter-spacing: 0.01em;
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
@@ -25,10 +27,11 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 2em 0 0.5em;
-  line-height: 1.2;
+  margin: 2.2em 0 0.6em;
+  line-height: 1.28;
   font-family: $header-font-family;
-  font-weight: bold;
+  font-weight: 600;
+  letter-spacing: 0.015em;
 }
 
 h1 {
@@ -61,7 +64,12 @@ small, .small {
 }
 
 p {
-  margin-bottom: 1.3em;
+  margin-bottom: 1.2em;
+
+  &:not(:last-child) {
+    text-align: justify;
+    text-justify: inter-word;
+  }
 }
 
 u,
@@ -77,6 +85,15 @@ del a {
   color: inherit;
 }
 
+
+.page__content {
+  max-width: 78ch;
+
+  p,
+  li {
+    hyphens: auto;
+  }
+}
 /* reduce orphans and widows when printing */
 
 p, pre, blockquote, ul, ol, dl, figure, table, fieldset {

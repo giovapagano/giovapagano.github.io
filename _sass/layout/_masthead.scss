@@ -4,7 +4,7 @@
 
 .masthead {
   position: fixed;
-  background: var(--global-bg-color);
+  background: color-mix(in srgb, var(--global-bg-color) 93%, #ffffff 7%);
   height: fit-content;
   top: 0;
   width: 100%;
@@ -27,8 +27,10 @@
   &__inner-wrap {
     @include container;
     @include clearfix;
-    padding: 0.5em 1em;
+    padding: 0.65em 1em;
     font-family: $sans-serif-narrow;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
 
     @include breakpoint($x-large) {
       max-width: $x-large;
