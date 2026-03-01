@@ -14,15 +14,18 @@ You can download my [CV (here in PDF)](/files/Giovanni_Pagano_CV.pdf).
 
 Current Appointments
 ======
-* 2023–present: Post-Doctoral Research Fellow  
-  * University of Milan  
-  * Project: *VIPoP — The Visual Politics of Populism (PRIN 2023–2025)*  
-  * Research focus: Computational methods for visual and textual political communication  
+* 2025–present: Research Fellow  
+  * Department of Social and Political Sciences, University of Milan  
+  * Research focus: Multimodal political communication; computational methods; political competition and democratic representation
 
 
 Past appointments
 ======
-
+* 2023–2025: Post-Doctoral Research Fellow  
+  * University of Milan  
+  * Project: *VIPoP — The Visual Politics of Populism (PRIN 2023–2025)*  
+  * Research focus: Computational methods for visual and textual political communication
+    
 * 2022–2023: Postdoctoral Researcher  
   * DAPs&CO program, University of Milan  
   * Research and teaching on computational methods for political science  
