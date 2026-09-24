@@ -1,0 +1,24 @@
+# Dated entries. `title` is the headline, `details` the rest (optional).
+# Text accepts light markdown: *italic*, **bold**, [link](https://...).
+# Wrap a value in "double quotes" if it contains a colon followed by a space.
+# Add `current: true` for positions you still hold.
+- when: Dec 2025–Present
+  current: true
+  title: Research Fellow / Researcher (Contratto di ricerca ex art. 22 L. 240/2010), Department of Social and Political Sciences, University of Milan
+  details: "Research programme funded by the Progetto di Eccellenza “CMDHub – Computational Models and Designs Hub” (U-GOV DECC23_025_AC). Scientific supervisor: Prof. Luigi Curini."
+
+- when: Mar 2023–Sep 2025
+  title: Post-doctoral researcher in the project VIPoP at University of Milan
+  details: "Development of the project “The Visual Politics of Populism” — Call: PRIN-Research Projects of National Relevance — Funded by Italian Ministry of Education, University and Research (MIUR): Sept 2023–Sept 2025. PI: Prof. Mattia Zulianello."
+
+- when: Oct 2022–Mar 2023
+  title: Post-doctoral researcher in the project DAPS&CO at University of Milan
+  details: Postdoctoral researcher at the Department of Social and Political Sciences of the University of Milan within the research program Data analytics for politics, society and complex organizations (DAPS&CO).
+
+- when: 2015–2019
+  title: Research Associate at REScEU / EuVisions
+  details: "External research associate at REScEU / EuVisions (ERC-funded, University of Milan; PI: Prof. Maurizio Ferrera), Centro di Ricerca e Documentazione L. Einaudi."
+
+- when: 2012–2015
+  title: Research Assistant at T.Wai — Torino World Affairs Institute
+  details: Research assistant and project area manager at the IR think-tank T.Wai, Turin, Italy.

@@ -1,0 +1,19 @@
+{%- assign p = site.data.cv.profile -%}
+<div class="profile">
+  <a href="{{ '/' | relative_url }}"><img class="avatar" src="{{ p.photo | relative_url }}" alt="{{ p.name }}"></a>
+  <div class="profile-text">
+    <a class="name" href="{{ '/' | relative_url }}">{{ p.name }}</a>
+    <p class="role">{{ p.position }}</p>
+    <p class="affil">{{ p.department }}<br>{{ p.institution }}</p>
+  </div>
+  <ul class="links">
+    <li><a href="mailto:{{ p.email }}" title="Email"><i class="fa-solid fa-envelope"></i><span>Email</span></a></li>
+    {%- if p.links.scholar %}<li><a href="{{ p.links.scholar }}" title="Google Scholar"><i class="ai ai-google-scholar"></i><span>Google Scholar</span></a></li>{% endif %}
+    {%- if p.links.orcid %}<li><a href="{{ p.links.orcid }}" title="ORCID"><i class="ai ai-orcid"></i><span>ORCID</span></a></li>{% endif %}
+    {%- if p.links.github %}<li><a href="{{ p.links.github }}" title="GitHub"><i class="fa-brands fa-github"></i><span>GitHub</span></a></li>{% endif %}
+    {%- if p.links.bluesky %}<li><a href="{{ p.links.bluesky }}" title="Bluesky"><i class="fa-brands fa-bluesky"></i><span>Bluesky</span></a></li>{% endif %}
+    {%- if p.links.x %}<li><a href="{{ p.links.x }}" title="X"><i class="fa-brands fa-x-twitter"></i><span>X</span></a></li>{% endif %}
+    {%- if p.links.linkedin %}<li><a href="{{ p.links.linkedin }}" title="LinkedIn"><i class="fa-brands fa-linkedin"></i><span>LinkedIn</span></a></li>{% endif %}
+    <li><a href="{{ site.cv_pdf | relative_url }}" title="CV (PDF)"><i class="fa-solid fa-file-pdf"></i><span>CV (PDF)</span></a></li>
+  </ul>
+</div>

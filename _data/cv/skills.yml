@@ -1,0 +1,8 @@
+- name: R
+  level: Expert
+- name: Python
+  level: Advanced
+- name: Stata
+  level: Advanced
+- name: LaTeX
+  level: Advanced

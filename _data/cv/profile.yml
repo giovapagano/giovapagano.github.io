@@ -1,0 +1,19 @@
+# Who you are. Used by the website sidebar/header and by the PDF CV header.
+name: Giovanni Pagano
+position: Research Fellow
+department: Department of Social and Political Sciences
+institution: University of Milan
+location: Milan, Italy
+# Lines printed under your name in the PDF CV
+cv_affiliation: "Università degli Studi di Milano — Dipartimento di Scienze Sociali e Politiche"
+address: "via Conservatorio 7, 20122 Milano, Italy"
+email: giovanni.pagano@unimi.it
+photo: /images/profile.png
+# Leave a value empty to hide the icon
+links:
+  scholar: "https://scholar.google.com/citations?user=af8iXX8AAAAJ"
+  orcid: "https://orcid.org/0000-0002-7825-3003"
+  github: "https://github.com/giovapagano"
+  bluesky: "https://bsky.app/profile/giovannipagano.bsky.social"
+  x: "https://x.com/giova_pag"
+  linkedin: "https://www.linkedin.com/in/giovanni-pagano-955a40372"

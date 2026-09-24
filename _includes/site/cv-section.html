@@ -1,0 +1,48 @@
+{%- comment -%} Renders one entry of _data/cv/sections.yml as HTML. {%- endcomment -%}
+{%- assign sec = include.section -%}
+{%- if sec.style == "publications" -%}
+  {%- assign entries = site.data.publications | where_exp: "p", "p.keyword contains sec.keyword" -%}
+{%- else -%}
+  {%- assign entries = site.data.cv[sec.data] | where_exp: "e", "e.web != false" -%}
+  {%- if sec.where == "current" %}{% assign entries = entries | where: "current", true %}{% endif -%}
+  {%- if sec.where == "past" %}{% assign entries = entries | where_exp: "e", "e.current != true" %}{% endif -%}
+{%- endif -%}
+{%- if entries.size > 0 %}
+<section class="cv-section">
+  <h2>{{ sec.title }}</h2>
+  {%- case sec.style %}
+  {%- when "dated" %}
+  <ul class="dated">
+    {%- for e in entries %}
+    <li>
+      <span class="when">{{ e.when }}</span>
+      <div class="what">
+        <div class="title">{{ e.title | markdownify | remove: "<p>" | remove: "</p>" | strip }}</div>
+        {%- if e.details %}<div class="details">{{ e.details | markdownify | remove: "<p>" | remove: "</p>" | strip }}</div>{% endif %}
+      </div>
+    </li>
+    {%- endfor %}
+  </ul>
+  {%- when "publications" %}
+  <ol class="pubs">{% for pub in entries %}{% include site/pub.html pub=pub compact=include.compact %}{% endfor %}</ol>
+  {%- when "teaching" %}
+  <ul class="dated">
+    {%- for e in entries %}
+    <li>
+      <span class="when">{% if e.period %}{{ e.period }}{% else %}{{ e.years | sort | join: ", " }}{% endif %}</span>
+      <div class="what">
+        <div class="title">{{ e.course }}</div>
+        <div class="details">{% if e.role %}{{ e.role }}, {% endif %}{{ e.institution }}. {{ e.details | markdownify | remove: "<p>" | remove: "</p>" | strip }}</div>
+      </div>
+    </li>
+    {%- endfor %}
+  </ul>
+  {%- when "conferences" %}
+  <ul class="plain">{% for e in entries %}<li>{{ e.name }}: <span class="muted">{{ e.years }}</span></li>{% endfor %}</ul>
+  {%- when "inline" %}
+  <p class="inline-list">{% for e in entries %}<span>{{ e.name }}{% if e.level %} <span class="muted">({{ e.level }})</span>{% endif %}</span>{% endfor %}</p>
+  {%- else %}
+  <ul class="plain">{% for e in entries %}<li>{{ e.text | markdownify | remove: "<p>" | remove: "</p>" | strip }}</li>{% endfor %}</ul>
+  {%- endcase %}
+</section>
+{%- endif %}

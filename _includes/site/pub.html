@@ -1,0 +1,29 @@
+{%- assign pub = include.pub -%}
+{%- if pub.doi != "" %}{% assign link = "https://doi.org/" | append: pub.doi %}{% elsif pub.url != "" %}{% assign link = pub.url %}{% else %}{% assign link = nil %}{% endif -%}
+<li class="pub">
+  <div class="pub-title">{% if link %}<a href="{{ link }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</div>
+  <div class="pub-authors">
+    {%- for a in pub.authors -%}
+      {%- if a.me %}<strong>{{ a.name }}</strong>{% else %}{{ a.name }}{% endif -%}
+      {%- unless forloop.last %}, {% endunless -%}
+    {%- endfor %} <span class="pub-year">({{ pub.year }})</span>
+  </div>
+  {%- if pub.container != "" or pub.note != "" %}
+  <div class="pub-venue">
+    {%- if pub.container != "" %}{% if pub.prefix %}{{ pub.prefix }} {% endif %}<em>{{ pub.container }}</em>{% if pub.extra != "" %}, {{ pub.extra }}{% endif %}{% endif -%}
+    {%- if pub.note != "" %}<span class="badge">{{ pub.note }}</span>{% endif -%}
+  </div>
+  {%- endif %}
+  {%- unless include.compact %}
+  {%- if pub.abstract != "" or pub.doi != "" or pub.url != "" or pub.pdf != "" %}
+  <div class="pub-links">
+    {%- if pub.doi != "" %}<a class="chip" href="https://doi.org/{{ pub.doi }}">DOI</a>{% endif -%}
+    {%- if pub.url != "" %}<a class="chip" href="{{ pub.url }}">Link</a>{% endif -%}
+    {%- if pub.pdf != "" %}<a class="chip" href="{{ pub.pdf | relative_url }}">PDF</a>{% endif -%}
+    {%- if pub.abstract != "" %}
+    <details><summary class="chip">Abstract</summary><p>{{ pub.abstract }}</p></details>
+    {%- endif %}
+  </div>
+  {%- endif %}
+  {%- endunless %}
+</li>
