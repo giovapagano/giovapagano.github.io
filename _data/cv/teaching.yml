@@ -1,0 +1,41 @@
+# One entry per course. List every year you taught it in `years`;
+# the PDF groups courses by year, the website groups years by course.
+# Use `period` instead of `years` for a block shown as a single range (e.g. 2021–2025).
+- course: Visual Analysis for Political Scientists
+  role: Workshop Instructor
+  institution: SISP Conference (Naples)
+  details: 4-hour workshop for Junior & Senior Scholars. Funded by Società Italiana di Scienza Politica.
+  years: [2025]
+
+- course: Large Language Models (LLMs) for Political Scientists
+  role: Workshop Instructor
+  institution: SISP Conference (Trieste)
+  details: 6-hour workshop for Junior & Senior Scholars. Funded by Società Italiana di Scienza Politica.
+  years: [2024]
+
+- course: Introduction to R
+  role: Adjunct Professor
+  institution: University of Milan
+  details: MA in Public & Corporate Communication (DAPS&CO).
+  years: [2025, 2024, 2023]
+
+- course: Data Science for Organizations
+  institution: University of Milan
+  details: Undergraduate, TA (Prof. M. Cremonini).
+  years: [2025]
+
+- course: Multivariate Analysis for Social and Political Scientists
+  role: Adjunct Professor
+  institution: University of Milan
+  details: MA in Public & Corporate Communication (DAPS&CO).
+  years: [2023]
+
+- course: Data Management and Database Concepts (Lab)
+  institution: University of Milan
+  details: MA in Public & Corporate Communication (DAPS&CO).
+  years: [2023]
+
+- course: Political Science
+  institution: University of Milan
+  details: Undergraduate, TA (Prof. L. Curini).
+  period: 2021–2025

@@ -1,0 +1,67 @@
+# Builds the PDF CV and the website from the same data (_data/cv/) and deploys to GitHub Pages.
+# Repository settings → Pages → Source must be "GitHub Actions".
+name: Build CV and deploy site
+
+on:
+  push:
+    branches: [master, main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate CV sources from _data/cv
+        run: |
+          pip install pyyaml
+          python3 cv/build.py
+
+      - name: Compile PDF CV
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main.tex
+          working_directory: cv
+          latexmk_use_lualatex: true
+          args: -interaction=nonstopmode -halt-on-error
+
+      - name: Put the PDF where the site links to it
+        run: |
+          mkdir -p files
+          cp cv/main.pdf files/Giovanni_Pagano_CV.pdf
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+
+      - name: Build site
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+
+      - uses: actions/upload-pages-artifact@v3
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

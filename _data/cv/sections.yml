@@ -1,0 +1,47 @@
+# Order and titles of the CV sections — shared by the PDF and the /cv/ web page.
+#   data:   file in _data/cv/ holding the entries (appointments, education, ...)
+#   where:  optional filter — "current" or "past" (uses the `current: true` flag)
+#   style:  dated | list | inline | teaching | conferences | publications
+#   keyword: for style=publications, the bib `keywords` value to print
+#   web / pdf: set to false to hide a section from one of the two outputs
+- title: Current Appointments
+  data: appointments
+  where: current
+  style: dated
+- title: Past Appointments
+  data: appointments
+  where: past
+  style: dated
+- title: Education
+  data: education
+  style: dated
+- title: Peer-Reviewed Publications
+  style: publications
+  keyword: peerreviewed
+- title: Book Chapters
+  style: publications
+  keyword: bookchapter
+- title: Working Papers
+  style: publications
+  keyword: workingpaper
+- title: Selected Work in Progress
+  style: publications
+  keyword: wip
+- title: Teaching
+  data: teaching
+  style: teaching
+- title: Professional Conferences
+  data: conferences
+  style: conferences
+- title: Workshops and Invited Seminars
+  data: talks
+  style: dated
+- title: Service
+  data: service
+  style: list
+- title: Languages
+  data: languages
+  style: inline
+- title: Programming Languages
+  data: skills
+  style: inline

@@ -1,0 +1,70 @@
+% PDF CV template. Content lives in _data/cv/ — don't edit cv/generated/ by hand:
+% run `python3 cv/build.py` (CI does it automatically) to regenerate it.
+\documentclass[11pt,a4paper]{article}
+
+% ---------- Page & Typography ----------
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{libertinus} % classy serif (Overleaf-friendly)
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+
+% ---------- Colors & Links ----------
+\usepackage{xcolor}
+\definecolor{linkblue}{HTML}{1A4A7A}
+\usepackage[
+  colorlinks=true,
+  linkcolor=linkblue,
+  urlcolor=linkblue,
+  citecolor=linkblue
+]{hyperref}
+
+% ---------- Lists ----------
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*, noitemsep, topsep=2pt}
+\setlist[enumerate]{leftmargin=*, noitemsep, topsep=2pt}
+
+% ---------- Section styling ----------
+\usepackage{titlesec}
+\titleformat{\section}
+  {\large\scshape} % small caps for an academic/classy look
+  {}{0pt}{}
+  [\vspace{2pt}\titlerule]
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+% ---------- Bibliography ----------
+\usepackage[
+  backend=biber,
+  style=authoryear,
+  sorting=ydnt,
+  maxbibnames=99,
+  url=false % urls in the .bib are for the website; dois are still printed
+]{biblatex}
+\addbibresource{../_data/cv/publications.bib}
+
+% ---------- Helpers ----------
+\newcommand{\cvsection}[1]{\section*{#1}}
+\newcommand{\dateditem}[2]{\item \textbf{#1} — #2}
+
+\pagestyle{empty}
+
+% ---------- Date helpers ----------
+% Month Year format for "Last update"
+\newcommand{\monthyear}{%
+  \ifcase\month\or January\or February\or March\or April\or May\or June\or July\or August\or September\or October\or November\or December\fi%
+  \space\number\year%
+}
+
+\begin{document}
+
+\nocite{*}
+
+\input{generated/header}
+
+\vspace{6pt}
+
+\input{generated/body}
+
+\end{document}
