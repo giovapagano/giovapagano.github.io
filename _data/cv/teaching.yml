@@ -17,7 +17,13 @@
   role: Adjunct Professor
   institution: University of Milan
   details: MA in Public & Corporate Communication (DAPS&CO).
-  years: [2025, 2024, 2023]
+  years: [2026, 2025, 2024, 2023]
+
+- course: "Large Language Models for Social Science Research"
+  role: Instructor
+  institution: "ECPR Methods School — General Conference, Jagiellonian University (Kraków) & online"
+  details: "Summer school. In-person sessions 8–10 September (Kraków); online sessions 14–15 September."
+  years: [2026]
 
 - course: Data Science for Organizations
   institution: University of Milan
