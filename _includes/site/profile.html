@@ -14,6 +14,6 @@
     {%- if p.links.bluesky %}<li><a href="{{ p.links.bluesky }}" title="Bluesky"><i class="fa-brands fa-bluesky"></i><span>Bluesky</span></a></li>{% endif %}
     {%- if p.links.x %}<li><a href="{{ p.links.x }}" title="X"><i class="fa-brands fa-x-twitter"></i><span>X</span></a></li>{% endif %}
     {%- if p.links.linkedin %}<li><a href="{{ p.links.linkedin }}" title="LinkedIn"><i class="fa-brands fa-linkedin"></i><span>LinkedIn</span></a></li>{% endif %}
-    <li><a href="{{ site.cv_pdf | relative_url }}" title="CV (PDF)"><i class="fa-solid fa-file-pdf"></i><span>CV (PDF)</span></a></li>
+    <li><a href="{{ site.cv_pdf | relative_url }}?v={{ site.time | date: '%s' }}" title="CV (PDF)"><i class="fa-solid fa-file-pdf"></i><span>CV (PDF)</span></a></li>
   </ul>
 </div>
