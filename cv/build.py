@@ -239,7 +239,9 @@ def publications():
         }
         pub.update(venue(e))
         first_last = authors[0]["name"].split()[-1] if authors else ""
-        pub["_sort"] = (-int(re.sub(r"\D", "", pub["year"]) or 0), first_last, pub["title"])
+        year = int(re.sub(r"\D", "", pub["year"]) or 0)
+        month = int(re.sub(r"\D", "", e.get("month", "")) or 0)
+        pub["_sort"] = (-year, -month, first_last, pub["title"])
         pubs.append(pub)
     pubs.sort(key=lambda p: p.pop("_sort"))
     return pubs
