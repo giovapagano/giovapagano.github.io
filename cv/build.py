@@ -193,6 +193,22 @@ def parse_names(field):
     return names
 
 
+def compact_authors(names, keep=3):
+    """Long author lists on the website: first few, then you, then the last author."""
+    if len(names) <= keep + 3:
+        return names
+    gap = {"name": "…", "me": False}
+    out = names[:keep]
+    me = next((i for i, n in enumerate(names) if n["me"]), None)
+    if me is not None and me >= keep:
+        out += [gap, names[me]]
+        if me < len(names) - 1:
+            out += [gap, names[-1]]
+    else:
+        out += [gap, names[-1]]
+    return out
+
+
 def venue(e):
     t = e["type"]
     if t == "article":
@@ -229,8 +245,8 @@ def publications():
             "keyword": [k.strip() for k in e.get("keywords", "").split(",") if k.strip()],
             "year": e.get("year", ""),
             "title": bib_to_text(e.get("title", "")),
-            "authors": authors,
-            "note": bib_to_text(e.get("note", "")),
+            "authors": compact_authors(authors),
+            "note": bib_to_text(e.get("note", "")) or e.get("pubstate", "").capitalize(),
             "doi": e.get("doi", ""),
             "url": e.get("url", ""),
             "pdf": e.get("pdf", ""),
