@@ -4,7 +4,10 @@
 # `summary` and `caption` accept markdown; separate paragraphs with a blank line.
 - slug: visual-politics
   title: Visual and Multimodal Political Communication
-  image: /images/research/visual_consistency_pipeline.png
+  image: /images/research/visual_similarity.jpg
+  caption: >-
+    A campaign post (left) and the three most similar posts among those published by European
+    parties on Instagram, measured with image embeddings from a vision model.
   summary: |-
     Images have become one of the main ways in which parties and leaders speak to voters. On
     platforms such as Instagram, a single picture can signal who a party is, what it stands for and
@@ -59,8 +62,11 @@
       url: https://huggingface.co/giovannip
 
 - slug: democratic-rhetoric
-  title: "Democratic Backsliding: Leaders' Rhetoric and Citizens' Attitudes"
-  image: /images/research/demo_rhetoric_freedom.png
+  title: The Language and Limits of Democratic Support
+  image: /images/research/democratic_vocabulary.png
+  caption: >-
+    How often autocratizing leaders use "democracy", "freedom" and "rights" in their speeches,
+    over the course of autocratization. Corda & Pagano, work in progress.
   summary: |-
     Democracies today rarely collapse in a single blow. More often they erode gradually, at the
     hands of elected leaders who keep the outward forms of democracy while hollowing out its
