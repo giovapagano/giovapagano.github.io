@@ -8,15 +8,11 @@ redirect_from:
   - /about.html
 ---
 
-<p class="lede">Research Fellow in political science at the University of Milan, working on multimodal political communication and computational methods.</p>
+I am a Research Fellow in the [Department of Social and Political Sciences](https://sps.unimi.it/) at the University of Milan, where I work with Luigi Curini. I bring computational methods for text, images and legal documents to long-standing questions in comparative politics. My main research concerns multimodal political communication: how parties and leaders combine words and images in fragmented media environments, and what these strategies mean for political competition and democratic representation.
 
-Since December 2025, I am a Research Fellow in the [Department of Social and Political Sciences](https://sps.unimi.it/) at the University of Milan. I study multimodal political communication in fragmented media environments, leveraging large-scale datasets and advanced computational methods to analyse how political actors strategically combine text and visuals. My work examines the implications of these strategies for political competition and democratic representation in the digital age.
+My other projects fall into two strands. The first concerns executive power in the European Union. With Fabio Franchino and Marta Migliorati, I measure delegation and constraint across more than 9,000 EU laws adopted since 1958, to explain why the European Commission's powers keep growing and how much flexibility member states retain. With Alessia Damonte, I am extending this approach to Italian legislation to detect the political capture of bureaucracies under democratic backsliding. The second strand concerns the pressures on democratic politics: how leaders of autocratizing regimes appropriate the language of democracy, how radical right candidates mobilize citizens around visions of the past and the future, how gendered expectations shape the tone of parliamentary speech, and how younger generations form political attitudes as traditional ideologies lose their hold.
 
-From 2023 to 2025, I was a Postdoctoral Research Fellow at the University of Milan, contributing to the [*VIPoP — The Visual Politics of Populism*](https://x.com/vipop_project) (PRIN 2023–2025) project, where I examined the strategic use of visual and textual communication by parties and leaders.
-
-Before this position, I was a postdoctoral researcher in the [DAPs&CO program](https://www.unimi.it/en/ugov/ou-structure/department-social-and-political-sciences) on computational methods for political science, and completed my PhD at [NASP](https://www.nasp.eu/training/phd-programmes/pols.html), where I studied online campaigning and affective polarization during the 2019 European Parliament elections.
-
-Across my research, I combine theory-driven political analysis with computational methods to examine how political actors communicate, govern, and compete — from multimodal campaign strategies and media narratives to legislative bargaining and executive discretion — and how these dynamics shape democratic representation.
+Before my current position, I was a postdoctoral researcher on [*VIPoP — The Visual Politics of Populism*](https://x.com/vipop_project) (PRIN, 2023–2025) and in the DAPS&CO programme, and I completed my PhD at [NASP](https://www.nasp.eu/training/phd-programmes/pols.html) in 2022 with a dissertation on the 2019 European Parliament election campaign on Twitter. On this site you can find my [research projects](/research/), [publications](/publications/), [teaching](/teaching/) and [CV](/cv/).
 
 <section class="home-block">
   <h2>Recent publications</h2>

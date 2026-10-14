@@ -1,5 +1,7 @@
 # Research projects shown on /research/. Publications are attached automatically
 # through the `project = {slug}` field in _data/cv/publications.bib.
+# Optional per project: `caption` (under the image) and `links` (label + url).
+# `summary` and `caption` accept markdown; separate paragraphs with a blank line.
 - slug: visual-politics
   title: Visual Politics
   image: /images/research/visual_consistency_pipeline.png
@@ -8,14 +10,36 @@
     focusing on populist radical right parties, and visual consistency in campaign communication.
 
 - slug: eu-laws
-  title: "EU Legislative Texts: Constraints and Delegation"
-  image: /images/research/eu_laws.png
-  summary: >-
-    This research investigates how legislative texts can be systematically mined to shed light on
-    legislative-executive relations, focusing on patterns of delegation and constraint that structure
-    the chain of authority from voters to bureaucrats. By analyzing legislative texts, we provide new
-    insights into how legislators confer powers on executive actors and impose limits on their
-    actions—revealing the formal architecture of political authority embedded in EU legislation.
+  title: Executive Power in EU Legislation, 1958–2019
+  image: /images/research/commission_discretion.jpg
+  caption: >-
+    The Commission's mean executive discretion (solid line) and the number of laws adopted each
+    year (dashed), 1958–2019. From Franchino, Migliorati & Pagano (2026), *West European Politics*.
+  summary: |-
+    Laws are where legislators decide who governs and on what terms. Each directive or regulation
+    assigns powers to executive actors (the Commission, supranational agencies, member states,
+    national authorities) and sets limits on how those powers can be used. With Fabio Franchino and
+    Marta Migliorati, I study this architecture of executive power across more than six decades of
+    EU legislation.
+
+    The agenda rests on a new way of measuring it. Together with Valerio Vignoli, we built a
+    transparent, rule-based pipeline that reads the syntax legislators use to delegate and to
+    constrain, and applied it to more than 600,000 sentences from 9,319 directives and regulations
+    adopted between 1958 and 2019. The pipeline closely matches human coders, outperforms
+    fine-tuned transformer models, and yields the most comprehensive measures of delegation and
+    constraint in the EU to date.
+
+    With these data we revisit core questions about European integration. We show why counting how
+    often legislators constrain, rather than how many kinds of constraint they use, better captures
+    their intent to control implementation. We find that the steady empowerment of the European
+    Commission rests on a supranational alliance with the European Parliament, strongest when the
+    two are ideologically close. And we trace where the obligations that EU law imposes on member
+    states come from, and how much flexibility those states retain.
+  links:
+    - label: Data (Harvard Dataverse)
+      url: https://doi.org/10.7910/DVN/ELPE1S
+    - label: Models (Hugging Face)
+      url: https://huggingface.co/giovannip
 
 - slug: democratic-rhetoric
   title: Democratic Rhetoric in Autocratizing Regimes
