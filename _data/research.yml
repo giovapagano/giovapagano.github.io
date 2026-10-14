@@ -3,11 +3,28 @@
 # Optional per project: `caption` (under the image) and `links` (label + url).
 # `summary` and `caption` accept markdown; separate paragraphs with a blank line.
 - slug: visual-politics
-  title: Visual Politics
+  title: Visual and Multimodal Political Communication
   image: /images/research/visual_consistency_pipeline.png
-  summary: >-
-    We study how political actors use images on platforms like Instagram to shape narratives,
-    focusing on populist radical right parties, and visual consistency in campaign communication.
+  summary: |-
+    Images have become one of the main ways in which parties and leaders speak to voters. On
+    platforms such as Instagram, a single picture can signal who a party is, what it stands for and
+    whom it speaks to, often faster and more ambiguously than words. This project studies how
+    political actors use visual and multimodal communication strategically, and what these
+    choices mean for party competition and democratic representation. Much of this work started
+    within the PRIN project *VIPoP — The Visual Politics of Populism*.
+
+    A central concern is how parties manage the tension between recognizability and appeal. Parties
+    with strong or controversial identities, such as the populist radical right, need to stay
+    recognizable to their core supporters while looking acceptable to wider audiences. Images allow
+    them to do both at once, combining ideological markers with softer signals of ordinariness,
+    proximity or competence within the same frame. We study how such combinations are organized
+    across a party's communication, whether party families converge on distinctive visual
+    repertoires, and how images and text work together, reinforcing or departing from each other.
+
+    The project also develops computational tools to study visual content at scale. We combine
+    image embeddings from vision models, automated descriptions produced by vision-language models,
+    topic models and human coding, and apply them to tens of thousands of social media posts by
+    parties and candidates across Europe.
 
 - slug: eu-laws
   title: Executive Power in EU Legislation, 1958–2019
@@ -42,9 +59,21 @@
       url: https://huggingface.co/giovannip
 
 - slug: democratic-rhetoric
-  title: Democratic Rhetoric in Autocratizing Regimes
+  title: "Democratic Backsliding: Leaders' Rhetoric and Citizens' Attitudes"
   image: /images/research/demo_rhetoric_freedom.png
-  summary: >-
-    We examine how the semantics of liberal-democratic concepts shift in speeches from regimes
-    undergoing autocratization, using embedding regression to track rhetorical change over time
-    and across contexts.
+  summary: |-
+    Democracies today rarely collapse in a single blow. More often they erode gradually, at the
+    hands of elected leaders who keep the outward forms of democracy while hollowing out its
+    substance. This project studies that process from two sides: how leaders talk about democracy
+    while undermining it, and how citizens respond when democratic rights come under pressure.
+
+    With Tiziana Corda, I study the language of autocratizing leaders. Would-be autocrats seldom
+    reject democracy openly; they invoke it to protect their legitimacy at home and abroad. Using
+    word embeddings on a large corpus of political speeches, we trace whether core democratic
+    concepts such as democracy, freedom and rights keep their meaning as autocratization deepens,
+    or are gradually reframed in illiberal terms, and how ties to democratic partners shape this
+    rhetoric.
+
+    With Margherita Bordignon and Francesco Piacentini, I turn to the demand side: when, and for
+    whom, citizens are willing to accept restrictions on civil liberties, and what this reveals
+    about the foundations of democratic support.
